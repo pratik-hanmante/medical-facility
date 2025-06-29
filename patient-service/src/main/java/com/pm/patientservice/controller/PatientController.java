@@ -1,14 +1,16 @@
 package com.pm.patientservice.controller;
 
+import com.pm.patientservice.dto.PatientRequestDTO;
 import com.pm.patientservice.dto.PatientResponseDTO;
 import com.pm.patientservice.service.PatientService;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/patients")  // ✅ Correct place for the path
+@RequestMapping("/patients")
 public class PatientController {
 
     private final PatientService patientService;
@@ -20,6 +22,15 @@ public class PatientController {
     @GetMapping
     public ResponseEntity<List<PatientResponseDTO>> getPatients() {
         List<PatientResponseDTO> patients = patientService.getPatients();
-        return ResponseEntity.ok(patients);
+        return patients == null || patients.isEmpty()
+                ? ResponseEntity.noContent().build()
+                : ResponseEntity.ok(patients);
+    }
+
+    @PostMapping
+    public ResponseEntity<PatientResponseDTO> createPatient(
+            @Valid @RequestBody PatientRequestDTO patientRequestDTO) {
+        PatientResponseDTO createdPatient = patientService.createPatient(patientRequestDTO);
+        return ResponseEntity.status(201).body(createdPatient);
     }
 }
