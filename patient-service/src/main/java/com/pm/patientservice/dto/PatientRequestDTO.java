@@ -7,7 +7,7 @@ import jakarta.validation.constraints.Size;
 
 /**
  * Data Transfer Object for creating or updating a Patient entity.
- * This DTO includes basic validations using Jakarta Bean Validation.
+ * This DTO includes basic validations
  */
 public class PatientRequestDTO {
 
