@@ -61,7 +61,7 @@ public class PatientRequestDTO {
         this.name = name;
     }
 
-    // Getter and setter for email
+    // Getter and setter for email address
     public @NotBlank(message = "Email is required")
     @Email(message = "Email should be valid")
     String getEmail() {
