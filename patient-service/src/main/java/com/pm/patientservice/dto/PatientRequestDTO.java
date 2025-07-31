@@ -21,7 +21,7 @@ public class PatientRequestDTO {
 
     /**
      * Email address of the patient.
-     * Must not be blank and should follow a valid email format.
+     * Must not be blank and should follow a valid mail format.
      */
     @NotBlank(message = "Email is required")
     @Email(message = "Email should be valid")
