@@ -29,7 +29,7 @@ public class PatientRequestDTO {
 
     /**
      * Residential address of the patient.
-     * Must not be blank.
+     should  not be blank
      */
     @NotBlank(message = "Address is required")
     private String address;
