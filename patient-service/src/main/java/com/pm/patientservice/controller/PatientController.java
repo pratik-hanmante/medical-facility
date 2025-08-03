@@ -20,6 +20,7 @@ import java.util.UUID;
 @Tag(name = "Patient", description = "API for managing patients")
 public class PatientController {
 
+    //exporting the context of patient service
     private final PatientService patientService;
 
     public PatientController(PatientService patientService) {
