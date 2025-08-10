@@ -59,7 +59,7 @@ public class GlobalExceptionHandler {
     /**
      * Handles custom PatientNotFoundException when a requested patient record is not found.
      *
-     * @param ex PatientNotFoundException thrown when patient is not found
+
      * @return ResponseEntity with a user-friendly error message
      */
     @ExceptionHandler(PatientNotFoundException.class)
