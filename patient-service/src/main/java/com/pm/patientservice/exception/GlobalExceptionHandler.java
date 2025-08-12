@@ -56,12 +56,7 @@ public class GlobalExceptionHandler {
         return ResponseEntity.badRequest().body(errors);
     }
 
-    /**
-     * Handles custom PatientNotFoundException when a requested patient record is not found.
-     *
 
-
-     */
     @ExceptionHandler(PatientNotFoundException.class)
     public ResponseEntity<Map<String, String>> handlePatientNotFoundException(PatientNotFoundException ex) {
 
