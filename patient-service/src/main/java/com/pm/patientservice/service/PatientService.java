@@ -67,6 +67,8 @@ public class PatientService {
 
     }
 
+    public void createNewPatient()
+    }
 
 
 
