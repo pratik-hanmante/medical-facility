@@ -53,13 +53,7 @@ public class PatientService {
         return PatientMapper.toDTO(newPatient);
     }
 
-    /**
-     * Update an existing patient by ID.
-     *
-     * @param id                 Patient ID
-     * @param patientRequestDTO  updated patient details
-     * @return updated patient as DTO
-     */
+
     public PatientResponseDTO updatePatient(UUID id, PatientRequestDTO patientRequestDTO) {
         // Find existing patient or throw error
         Patient patient = patientRepository.findById(id)
