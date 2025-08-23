@@ -22,9 +22,6 @@ public class PatientService {
         this.patientRepository = patientRepository;
     }
 
-    /**
-     * Fetch all patients from DB and convert them into DTOs
-     */
     public List<PatientResponseDTO> getPatients() {
         return patientRepository.findAll()
                 .stream()
