@@ -5,10 +5,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
-/**
- * Data Transfer Object for creating or updating a Patient entity.
- * This DTO includes basic validations for customer 
- */
+
 public class PatientRequestDTO {
 
     /**
