@@ -29,12 +29,7 @@ public class PatientService {
                 .toList();
     }
 
-    /**
-     * Create a new patient after checking if the email already exists.
-     *
-     * @param patientRequestDTO request payload containing patient details
-     * @return created patient details as DTO
-     */
+
     public PatientResponseDTO createPatient(PatientRequestDTO patientRequestDTO) {
         // Check if email already exists
         if (patientRepository.existsByEmail(patientRequestDTO.getEmail())) {
