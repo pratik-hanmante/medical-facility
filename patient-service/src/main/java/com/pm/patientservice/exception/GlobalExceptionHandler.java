@@ -38,12 +38,7 @@ public class GlobalExceptionHandler {
         return ResponseEntity.badRequest().body(errors);
     }
 
-    /**
-     * Handles custom EmailAlreadyExistsException when trying to register with an existing email.
-     *
-     * @param ex EmailAlreadyExistsException thrown when email is already taken
-     * @return ResponseEntity with a user-friendly error message
-     */
+
     @ExceptionHandler(EmailAlreadyExistsException.class)
     public ResponseEntity<Map<String, String>> handleEmailAlreadyExistsException(EmailAlreadyExistsException ex) {
 
