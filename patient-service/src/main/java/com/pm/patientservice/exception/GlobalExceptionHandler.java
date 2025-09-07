@@ -10,10 +10,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Global exception handler for handling exceptions across the whole application in one place.
- * This uses @ControllerAdvice to catch and process exceptions thrown by controllers.
- */
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
