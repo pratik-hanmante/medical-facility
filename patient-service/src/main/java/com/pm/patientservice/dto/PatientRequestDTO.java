@@ -9,7 +9,7 @@ import jakarta.validation.constraints.Size;
 public class PatientRequestDTO {
 
     /**
-     * Full name of the patient.
+ 
      * Must not be blank and has a maximum length of 100 characters.
      */
     @NotBlank(message = "Name is required")
