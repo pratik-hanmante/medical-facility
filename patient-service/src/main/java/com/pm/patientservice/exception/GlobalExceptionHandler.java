@@ -17,13 +17,7 @@ public class GlobalExceptionHandler {
     // Logger instance for logging exception messages
     private static final Logger log = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
-    /**
-     * Handles validation exceptions when request body fields fail @Valid annotations.
-     * This method collects all validation errors and returns them in a map format.
-     *
-     * @param ex MethodArgumentNotValidException thrown when validation fails
-     * @return ResponseEntity with a map of field names and error messages
-     */
+
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<Map<String, String>> handleValidationException(MethodArgumentNotValidException ex) {
         Map<String, String> errors = new HashMap<>();
