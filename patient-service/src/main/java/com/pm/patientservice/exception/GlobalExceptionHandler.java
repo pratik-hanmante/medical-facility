@@ -50,7 +50,7 @@ public class GlobalExceptionHandler {
         log.warn("Patient Not Found {}", ex.getMessage());
 
         Map<String, String> errors = new HashMap<>();
-        errors.put("message", "patient you searched for could not be found");
+        errors.put("message", "patient you searched for could not be found in system");
 
         return ResponseEntity.badRequest().body(errors);
     }
