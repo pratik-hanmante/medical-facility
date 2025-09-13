@@ -14,7 +14,7 @@ import java.util.Map;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    // Logger instance for logging exception messages
+    // Logger instance for logging exception
     private static final Logger log = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
 
