@@ -58,7 +58,7 @@ public class PatientService {
             );
         }
 
-        // Update patient fields
+        // Updating patient fields
         patient.setName(patientRequestDTO.getName());
         patient.setEmail(patientRequestDTO.getEmail());
         patient.setAddress(patientRequestDTO.getAddress());
