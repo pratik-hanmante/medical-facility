@@ -33,7 +33,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(EmailAlreadyExistsException.class)
     public ResponseEntity<Map<String, String>> handleEmailAlreadyExistsException(EmailAlreadyExistsException ex) {
 
-        // Log the exception with a warning level
+        // Log the exception with warning level
         log.warn("Email Already Exists {}", ex.getMessage());
 
         Map<String, String> errors = new HashMap<>();
