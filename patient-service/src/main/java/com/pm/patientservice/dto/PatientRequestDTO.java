@@ -71,7 +71,7 @@ public class PatientRequestDTO {
         this.email = email;
     }
 
-    // Getter and setter for address
+    // Getters and setters for address
     public @NotBlank(message = "Address is required") String getAddress() {
         return address;
     }
