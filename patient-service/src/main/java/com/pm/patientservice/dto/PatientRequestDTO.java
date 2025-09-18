@@ -10,7 +10,7 @@ public class PatientRequestDTO {
 
     /**
  
-     * Must not be blank and has a maximum length of 100 characters.
+     * Must not be blank and has a maximum length 
      */
     @NotBlank(message = "Name is required")
     @Size(max = 100, message = "Name cannot exceed 100 characters")
