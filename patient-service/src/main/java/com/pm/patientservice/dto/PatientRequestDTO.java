@@ -91,7 +91,7 @@ public class PatientRequestDTO {
         this.dateOfBirth = dateOfBirth;
     }
 
-    // Getter and setter for registered date
+    // Getter and setter for registered date of the user
     public String getRegisteredDate() {
         return registeredDate;
     }
