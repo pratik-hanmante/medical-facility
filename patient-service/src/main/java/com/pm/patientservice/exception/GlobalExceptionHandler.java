@@ -22,7 +22,7 @@ public class GlobalExceptionHandler {
     public ResponseEntity<Map<String, String>> handleValidationException(MethodArgumentNotValidException ex) {
         Map<String, String> errors = new HashMap<>();
 
-        // Extract each field error and put into the map with field name as key
+        // Extract each field error and put into the map with field name as the key
         ex.getBindingResult().getFieldErrors().forEach(
                 error -> errors.put(error.getField(), error.getDefaultMessage()));
 
