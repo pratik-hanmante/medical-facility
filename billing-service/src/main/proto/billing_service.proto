@@ -1,0 +1,27 @@
+syntax = "proto3"; // Use Protocol Buffers version 3 syntax
+
+// Generate multiple Java files instead of a single outer class
+option java_multiple_files = true;
+
+// Define the base Java package for the generated classes
+option java_package = "billing";
+
+// BillingService defines RPC methods related to billing operations
+service BillingService {
+  // Creates a billing account for a patient
+  // Takes a BillingRequest and returns a BillingResponse
+  rpc CreateBillingAccount (BillingRequest) returns (BillingResponse);
+}
+
+// Request message for creating a billing account
+message BillingRequest {
+  string patientId = 1; // Unique identifier of the patient
+  string name = 2;      // Patient's full name
+  string email = 3;     // Patient's email address
+}
+
+// Response message after attempting to create a billing account
+message BillingResponse {
+  string accountId = 1; // Generated billing account ID
+  string status = 2;    // Status of account creation (e.g., SUCCESS, FAILED)
+}
