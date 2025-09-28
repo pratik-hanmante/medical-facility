@@ -12,7 +12,7 @@ public class BillingGrpcService extends BillingServiceImplBase {
     @Override
     public void createBillingAccount(BillingRequest request, StreamObserver<BillingResponse> responseObserver) {
         try {
-            // Simulated business logic for patient billing account creation
+            // logic for patient billing account creation
             String patientId = request.getPatientId();
             double amount = request.getAmount();
 
