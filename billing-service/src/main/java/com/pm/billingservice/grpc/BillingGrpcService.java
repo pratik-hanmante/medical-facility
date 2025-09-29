@@ -16,7 +16,7 @@ public class BillingGrpcService extends BillingServiceImplBase {
             String patientId = request.getPatientId();
             double amount = request.getAmount();
 
-            // In real life, save billing info to DB here
+            // save billing info to DB here
             System.out.println("Creating billing account for Patient ID: " + patientId + " with amount: " + amount);
 
             // Build response
