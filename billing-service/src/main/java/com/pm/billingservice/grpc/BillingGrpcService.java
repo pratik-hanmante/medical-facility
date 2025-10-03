@@ -30,8 +30,7 @@ public class BillingGrpcService extends BillingServiceImplBase {
         // Log the received request for debugging/tracing purposes
         log.info("createBillingAccount request received {}", billingRequest.toString());
 
-        // TODO: Replace this placeholder with actual business logic
-        // e.g., saving billing details into database and generating an account ID
+
 
         // Build the response object with dummy values for now
         BillingResponse response = BillingResponse.newBuilder()
