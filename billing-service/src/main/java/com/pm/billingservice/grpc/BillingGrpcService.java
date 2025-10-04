@@ -41,7 +41,7 @@ public class BillingGrpcService extends BillingServiceImplBase {
         // Send the response back to the client
         responseObserver.onNext(response);
 
-        // Mark the response as completed (no more data will be sent)
+        // Mark the response as completed
         responseObserver.onCompleted();
     }
 }
