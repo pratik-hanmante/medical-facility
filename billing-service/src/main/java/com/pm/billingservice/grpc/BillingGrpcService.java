@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * gRPC service implementation for handling billing-related operations.
- * This service extends the generated gRPC base class (BillingServiceImplBase)
+ * This service extends the generated gRPC base class
  
  */
 @GrpcService
