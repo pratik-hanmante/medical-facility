@@ -7,11 +7,7 @@ import net.devh.boot.grpc.server.service.GrpcService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * gRPC service implementation for handling billing-related operations.
- * This service extends the generated gRPC base class (BillingServiceImplBase)
- * and provides concrete implementations for RPC methods defined in the proto file.
- */
+
 @GrpcService
 public class BillingGrpcService extends BillingServiceImplBase {
 
