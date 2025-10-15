@@ -1,5 +1,4 @@
-syntax = "proto3"; // Use Protocol Buffers version 3 syntax
-
+syntax = "proto3"; 
 // Generate multiple Java files instead of a single outer class
 option java_multiple_files = true;
 
