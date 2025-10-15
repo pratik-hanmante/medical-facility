@@ -6,10 +6,7 @@ import com.pm.patientservice.model.Patient;
 
 import java.time.LocalDate;
 
-/**
- * Mapper class for converting between Patient Entity and DTOs.
- * Ensures clean separation between API layer and database entity structure.
- */
+
 public class PatientMapper {
 
     /**
