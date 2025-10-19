@@ -31,7 +31,7 @@ public class BillingGrpcService extends BillingServiceImplBase {
         // Build the response object with dummy values for now
         BillingResponse response = BillingResponse.newBuilder()
                 .setAccountId("12345")   // Hardcoded account ID for demo
-                .setStatus("ACTIVE")     // Hardcoded status
+                .setStatus("ACTIVE")     
                 .build();
 
         // Send the response back to the client
