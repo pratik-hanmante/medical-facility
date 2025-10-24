@@ -41,7 +41,7 @@ public class PatientService {
         // Convert DTO to model and save
         Patient newPatient = patientRepository.save(PatientMapper.toModel(patientRequestDTO));
 
-        // Return as DTO
+        // Returning  as DTO
         return PatientMapper.toDTO(newPatient);
     }
 
