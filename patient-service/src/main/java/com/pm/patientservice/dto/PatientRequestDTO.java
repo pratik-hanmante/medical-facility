@@ -52,7 +52,7 @@ public class PatientRequestDTO {
     @NotBlank(groups = CreatePatientValidationGroup.class, message = "Registered date is required")
     private String registeredDate;
 
-    // ---------------------------- Getters and Setters ----------------------------
+   
 
     /**
      * Returns the patient's name.
