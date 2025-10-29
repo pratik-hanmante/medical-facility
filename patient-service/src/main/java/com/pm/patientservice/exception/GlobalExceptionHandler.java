@@ -20,7 +20,7 @@ import java.util.Map;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    // Logger instance for recording exceptions
+    // Logger instance 
     private static final Logger log = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
     /**
