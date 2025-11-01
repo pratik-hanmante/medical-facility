@@ -40,7 +40,7 @@ public class PatientService {
      * Create a new patient record.
      * 1. Check if the email already exists to maintain uniqueness.
      * 2. Convert the incoming DTO to a Patient entity.
-     * 3. Save it to the database.
+     * 3. Save it to the DB
      * 4. Return the saved patient as a response DTO.
      */
     public PatientResponseDTO createPatient(PatientRequestDTO patientRequestDTO) {
