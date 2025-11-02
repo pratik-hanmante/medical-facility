@@ -7,7 +7,7 @@ import jakarta.validation.constraints.Size;
 
 /**
  * Data Transfer Object (DTO) used for creating or updating patient information.
- * Includes validation annotations to ensure data integrity.
+ * Includes validations to ensure data integrity.
  */
 public class PatientRequestDTO {
 
