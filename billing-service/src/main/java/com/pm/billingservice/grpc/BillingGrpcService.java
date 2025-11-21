@@ -15,7 +15,7 @@ public class BillingGrpcService extends BillingServiceImplBase {
     private static final Logger log = LoggerFactory.getLogger(BillingGrpcService.class);
 
     /**
-     * Handles the gRPC call to create a new billing account.
+     
      *
      * @param billingRequest    Incoming request object from the client (contains billing details).
      * @param responseObserver  is Used to send response back to the client asynchronously
