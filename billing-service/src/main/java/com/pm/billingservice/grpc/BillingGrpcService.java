@@ -18,7 +18,7 @@ public class BillingGrpcService extends BillingServiceImplBase {
      
      *
      * @param billingRequest    Incoming request object from the client (contains billing details).
-     * @param responseObserver  is Used to send response back to the client asynchronously
+     * @param responseObserver is Used to send response back client to asynchronously
      */
     @Override
     public void createBillingAccount(billing.BillingRequest billingRequest, StreamObserver<billing.BillingResponse> responseObserver) {
