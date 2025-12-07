@@ -23,7 +23,7 @@ public class BillingGrpcService extends BillingServiceImplBase {
     @Override
     public void createBillingAccount(billing.BillingRequest billingRequest, StreamObserver<billing.BillingResponse> responseObserver) {
 
-        // Log the received request for debugging purposes
+        // Log the received request 
         log.info("createBillingAccount request received {}", billingRequest.toString());
 
 
