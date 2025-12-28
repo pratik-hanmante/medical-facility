@@ -17,7 +17,7 @@ public class BillingGrpcService extends BillingServiceImplBase {
     /**
      
      *
-     * @param billingRequest    Incoming request object from the clients
+     
      * @param responseObserver is Used to send response back client to asynchronously
      */
     @Override
