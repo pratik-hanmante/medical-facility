@@ -14,12 +14,7 @@ public class BillingGrpcService extends BillingServiceImplBase {
     
     private static final Logger log = LoggerFactory.getLogger(BillingGrpcService.class);
 
-    /**
-     
-     *
-     
-     * @param responseObserver is Used to send response back client to asynchronously
-     */
+
     @Override
     public void createBillingAccount(billing.BillingRequest billingRequest, StreamObserver<billing.BillingResponse> responseObserver) {
 
